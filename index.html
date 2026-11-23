@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dikshya Shakya | Personal Portfolio</title>
+<meta name="description" content="Welcome to the personal portfolio of Dikshya Shakya.">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  color: #292929;
+  background: #faf9f6;
+  line-height: 1.7;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 9%;
+  border-bottom: 1px solid #e9e6df;
+}
+.logo { font-family: Georgia, serif; font-size: 23px; }
+nav a { text-decoration: none; color: #555; margin-left: 22px; font-size: 13px; }
+.hero {
+  min-height: 590px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  padding: 90px 12%;
+}
+.hero-text { max-width: 570px; }
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: #9a846b;
+}
+h1 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: clamp(45px, 7vw, 76px);
+  line-height: 1.12;
+  margin: 22px 0;
+}
+.hero p { color: #777; max-width: 460px; }
+.photo {
+  width: 290px;
+  height: 370px;
+  background: #eeeae3;
+  border: 1px solid #e1dcd2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  text-align: center;
+  padding: 20px;
+}
+.button {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 12px 25px;
+  background: #292929;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+section { padding: 85px 12%; }
+section:nth-child(even) { background: #f1efe9; }
+.section-title {
+  font-family: Georgia, serif;
+  font-size: 37px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+.content { max-width: 700px; color: #707070; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #e8e5df;
+  padding: 28px;
+}
+.card h3 { font-family: Georgia, serif; font-weight: normal; margin-bottom: 10px; }
+.card p { color: #777; font-size: 14px; }
+footer {
+  padding: 35px 12%;
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+}
+@media(max-width:700px) {
+  nav { padding: 18px 6%; flex-wrap: wrap; gap: 12px; }
+  nav a { margin-left: 10px; font-size: 11px; }
+  .hero { flex-direction: column-reverse; padding: 65px 8%; align-items: flex-start; }
+  .photo { width: 100%; height: 300px; }
+  section { padding: 65px 8%; }
+  .cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Dikshya Shakya.</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-text">
+    <div class="eyebrow">Welcome to my personal space</div>
+    <h1>Hello, I'm<br>Dikshya Shakya.</h1>
+    <p>
+      A little introduction to who I am, what I do,
+      what inspires me, and the journey I'm building.
+    </p>
+    <a class="button" href="#about">Discover more</a>
+  </div>
+
+  <div class="photo">
+    Your photograph will go here.
+  </div>
+</header>
+
+<section id="about">
+  <div class="eyebrow">A little about me</div>
+  <h2 class="section-title">About Me</h2>
+  <p class="content">
+    Welcome! I'm Dikshya Shakya.
+    This is my personal portfolio, a space where I share
+    my background, interests, experiences and aspirations.
+    I'm always looking forward to learning, growing
+    and exploring new opportunities.
+  </p>
+</section>
+
+<section id="education">
+  <div class="eyebrow">My background</div>
+  <h2 class="section-title">Education</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Academic Journey</h3>
+      <p>Add your qualification, institution and year here.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="eyebrow">What I've worked on</div>
+  <h2 class="section-title">Projects & Experiences</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Project One</h3>
+      <p>Add a description of your project here.</p>
+    </div>
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>Add another project, experience or achievement here.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="eyebrow">What I bring</div>
+  <h2 class="section-title">Skills & Interests</h2>
+  <p class="content">
+    Add your technical skills, creative interests
+    and personal strengths here.
+  </p>
+</section>
+
+<section id="contact">
+  <div class="eyebrow">Let's connect</div>
+  <h2 class="section-title">Get in Touch</h2>
+  <p class="content">
+    Thank you for visiting my portfolio.
+    I'd love to connect and explore new opportunities.
+  </p>
+  <a class="button" href="mailto:YOUR-EMAIL@example.com">Email Me</a>
+</section>
+
+<footer>
+  © 2026 Dikshya Shakya. All rights reserved.
+</footer>
+
+</body>
+</html>
